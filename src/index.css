@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.TaskItem {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.TaskItem.completed {
+  text-decoration: line-through;
 }
+
+.TaskItem button {
+  margin-left: 10px;
+}
+
+.TaskList {
+  margin-top: 20px;
+}
+
+
+/* AddTaskForm.css */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Выравнивание по вертикали на весь экран */
+}
+
+.AddTaskForm {
+  width: 300px; /* Ширина формы */
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для формы */
+}
+
+.AddTaskForm input {
+  width: calc(100% - 85px); /* Ширина поля ввода */
+  margin-right: 10px;
+  padding: 5px;
+  padding-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.AddTaskForm button {
+  
+  margin-top: 5%;
+  margin-left: 0%;
+  padding: 10px 20px;
+  background-color: #96c822;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.AddTaskForm button:hover {
+  background-color: #a5bad0;
+}
+
